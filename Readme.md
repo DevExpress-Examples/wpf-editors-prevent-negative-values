@@ -1,11 +1,12 @@
-# How to prevent entering negative values in numeric editors
+# How to prevent negative values in numeric editors
+ 
+ 
+Use the following ways to enter only positive values.
+ 
+1. Configure a numeric [mask](https://docs.devexpress.com/WPF/6945/controls-and-libraries/data-editors/common-features/masked-input).
 
-In this example, we demonstrated the following ways to allow entering only positive values.
+As you can see in the [Mask Type: Numeric](https://docs.devexpress.com/WPF/6950/controls-and-libraries/data-editors/common-features/masked-input/mask-type-numeric) documentation topic, you can use the ';' symbol to specify different masks for negative and positive values. Your text editor will not allow entering negative values if you make the negative mask empty.
 
-1. Configuring a numeric mask.
+2. Use [SpinEdit](https://docs.devexpress.com/WPF/6163/controls-and-libraries/data-editors/editor-types/spinedit)/[SpinEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.SpinEditSettings) and set the [SpinEdit.MinValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.SpinEdit.MinValue)/[SpinEditSettings.MinValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.SpinEditSettings.MinValue) property.
 
-As you can see in the **Mask Type: Numeric** documentation topic, you can use the ';' symbol to specify differnet marks for negative and positive values. If the negative part is empty, your text editor will not allow entering negative values.
-
-2. Use SpinEdit/SpinEditSettings and set the MinValue property.
-
-Unlike TextEdit, which allows entering any values, this editor type is designed for numeric values and provides a ready-to-use MinValue property. It is also possible to hide the built-in spin up and down buttons by setting the AllowDefaultButton property.
+This editor type is designed for numeric values and provides a ready-to-use **MinValue** property. It also shows the spin up and down buttons, but it's easy to hide them by setting the [ButtonEdit.AllowDefaultButton](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.ButtonEdit.AllowDefaultButton)/[ButtonEditSettings.AllowDefaultButton](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.ButtonEditSettings.AllowDefaultButton) property.
