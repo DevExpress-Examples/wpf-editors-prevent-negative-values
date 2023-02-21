@@ -3,9 +3,9 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T830484)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to prevent negative values in numeric editors
- 
- 
+
+# WPF Data Editors - Allow Enter Only Positive Values
+
 Use the following ways to enter only positive values.
  
 1. Configure a numeric [mask](https://docs.devexpress.com/WPF/6945/controls-and-libraries/data-editors/common-features/masked-input).
@@ -15,3 +15,14 @@ As you can see in the [Mask Type: Numeric](https://docs.devexpress.com/WPF/6950/
 2. Use [SpinEdit](https://docs.devexpress.com/WPF/6163/controls-and-libraries/data-editors/editor-types/spinedit)/[SpinEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.SpinEditSettings) and set the [SpinEdit.MinValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.SpinEdit.MinValue)/[SpinEditSettings.MinValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.SpinEditSettings.MinValue) property.
 
 This editor type is designed for numeric values and provides a ready-to-use **MinValue** property. It also shows the spin up and down buttons, but it's easy to hide them by setting the [ButtonEdit.AllowDefaultButton](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.ButtonEdit.AllowDefaultButton)/[ButtonEditSettings.AllowDefaultButton](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.ButtonEditSettings.AllowDefaultButton) property.
+
+## Files to Review
+
+* [MainWindow.xaml](./CS/MainWindow.xaml)
+
+## Documentation
+
+* [Numeric Masks](https://docs.devexpress.com/WPF/6950/controls-and-libraries/data-editors/common-features/masked-input/mask-type-numeric)
+* [SpinEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.SpinEdit)
+* [SpinEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.SpinEditSettings)
+* [Assign Editors to Cells](https://docs.devexpress.com/WPF/401011/controls-and-libraries/data-grid/data-editing-and-validation/modify-cell-values/assign-an-editor-to-a-cell)
