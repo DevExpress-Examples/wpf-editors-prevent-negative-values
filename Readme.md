@@ -6,7 +6,7 @@
 
 # WPF Data Editors - Allow Enter Only Positive Numbers
 
-[WPF Data Editors](https://docs.devexpress.com/WPF/6190/controls-and-libraries/data-editors) allow you to limit values a user can enter. This example demonstrates how to allow users to enter only positive numbers.
+This example demonstrates how to allow users to enter only positive numbers in [WPF Data Editors](https://docs.devexpress.com/WPF/6190/controls-and-libraries/data-editors).
 
 ![image](https://user-images.githubusercontent.com/65009440/220624352-8e85574a-d3e9-476a-bcb5-74897baca85d.png)
 
@@ -14,7 +14,7 @@ You can use one of the following techniques:
  
 * Configure a numeric [mask](https://docs.devexpress.com/WPF/6945/controls-and-libraries/data-editors/common-features/masked-input).
 
-  Use the ';' symbol to specify different masks for positive and negative values. If the negative mask is empty, the text editor does not allow users to enter negative values:
+  Use the semicolon (`;`) symbol to specify different masks for positive and negative values. If the negative mask is empty, the text editor does not allow users to enter negative values:
   
   ```
   <dxe:TextEdit Mask="##0;" MaskType="Numeric" MaskUseAsDisplayFormat="True"/>
