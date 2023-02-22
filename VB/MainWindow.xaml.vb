@@ -1,27 +1,31 @@
-﻿Imports DevExpress.Xpf.Core
+Imports DevExpress.Xpf.Core
 Imports System.Collections.ObjectModel
 
 Namespace DXGridSample
-    Partial Public Class MainWindow
+
+    Public Partial Class MainWindow
         Inherits ThemedWindow
 
         Public Sub New()
-            InitializeComponent()
-
+            Me.InitializeComponent()
             Dim items = New ObservableCollection(Of Item)()
-            For i As Integer = 0 To 99
+            For i As Integer = 0 To 100 - 1
                 items.Add(New Item(i))
-            Next i
+            Next
 
-            grid.ItemsSource = items
+            Me.grid.ItemsSource = items
         End Sub
     End Class
+
     Public Class Item
+
         Public Sub New(ByVal i As Integer)
             Value1 = i
             Value2 = i
         End Sub
-        Public Property Value1() As Decimal
-        Public Property Value2() As Decimal
+
+        Public Property Value1 As Decimal
+
+        Public Property Value2 As Decimal
     End Class
 End Namespace
