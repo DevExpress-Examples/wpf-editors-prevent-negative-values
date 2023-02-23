@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WPF Data Editors - Allow Enter Only Positive Numbers
+# WPF Data Editors - Allow Users to Enter Only Positive Numbers
 
 This example demonstrates how to allow users to enter only positive numbers in [WPF Data Editors](https://docs.devexpress.com/WPF/6190/controls-and-libraries/data-editors).
 
