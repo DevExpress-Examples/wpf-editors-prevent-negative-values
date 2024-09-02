@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -10,9 +10,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DXGridSample</RootNamespace>
     <AssemblyName>DXGridSample</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -39,14 +38,17 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v17.2" />
-    <Reference Include="DevExpress.Mvvm.v17.2" />
-    <Reference Include="DevExpress.Printing.v17.2.Core" />
-    <Reference Include="DevExpress.Xpf.Core.v17.2" />
-    <Reference Include="DevExpress.Xpf.Printing.v17.2" />
-    <Reference Include="DevExpress.Xpf.Grid.v17.2" />
-    <Reference Include="DevExpress.Xpf.Grid.v17.2.Core" />
-    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v17.2" />
+    <Reference Include="DevExpress.Drawing.v24.2" />
+    <Reference Include="DevExpress.Data.v24.2" />
+    <Reference Include="DevExpress.Mvvm.v24.2" />
+    <Reference Include="DevExpress.Printing.v24.2.Core" />
+    <Reference Include="DevExpress.Data.Desktop.v24.2" />
+    <Reference Include="DevExpress.Xpf.Core.v24.2" />
+    <Reference Include="DevExpress.Xpf.Controls.v24.2" />
+    <Reference Include="DevExpress.Xpf.Printing.v24.2" />
+    <Reference Include="DevExpress.Xpf.Grid.v24.2" />
+    <Reference Include="DevExpress.Xpf.Grid.v24.2.Core" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v24.2" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -111,4 +113,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
 </Project>
